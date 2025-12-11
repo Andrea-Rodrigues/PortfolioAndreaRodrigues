@@ -1,0 +1,117 @@
+* {
+    font-family: "karla", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*Paleta de color*/
+    --colorBlanco: #ffffff;
+    --colorIndigo-A: #25245a;
+    --colorIndigo-B: #59588F;
+    --colorIndigo-C: #EEEEFB;
+    --colorTeal-A: #30B0C7;
+    --colorTeal-B: #A0DBE5;
+    --colorTeal-C: #EAF7F9;
+    --colorNeutro-A: #1E1E37;
+    --colorNeutro-B: #36364D;
+    --colorNeutro-C: #9898B2;
+    --colorNeutro-D: #F6F7FA;
+}
+
+/*-----------------------------------------HEADER*/
+
+
+.index-header {
+    height: 98vh;
+    background-image: linear-gradient(45deg,
+            var(--colorTeal-A),
+            var(--colorIndigo-A));
+
+}
+
+.seccion-index-header {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 6rem;
+}
+
+
+h6 {
+    font-family: "fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-style: oblique;
+    color: var(--colorBlanco);
+    display: flex;
+    align-self: self-start;
+}
+
+h1 {
+    font-size: 5.6rem;
+    color: var(--colorBlanco);
+    font-weight: 900;
+    line-height: 5rem;
+    text-align: right;
+    margin-top: 17rem;
+
+}
+
+.h1-fraunces {
+    font-family: "Fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 4.7rem;
+}
+
+button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--colorBlanco);
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border: 1.8px, solid var(--colorBlanco);
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
+
+/*-----------------------------------------------------Sobre Mi*/
+
+h3 {
+    font-size: 3.4rem;
+    color: var(--colorIndigo-A);
+    font-weight: 700;
+}
+
+.h5-fraunces {
+    font-family: "fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-style: oblique;
+    font-size: 2.2rem;
+    color: var(--colorIndigo-B);
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--colorNeutro-B);
+}
+
+h4 {
+    font-family: "fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: var(--colorIndigo-B);
+}
