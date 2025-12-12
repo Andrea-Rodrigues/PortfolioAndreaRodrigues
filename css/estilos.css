@@ -19,11 +19,26 @@
     --colorNeutro-D: #F6F7FA;
 }
 
+body {
+    display: grid;
+    grid-template-rows: auto 1fr 3fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "section"
+    "main"
+    "footer";
+    gap: 2rem;
+    
+}
 
-/*---------------------------------------------------------HEADER*/
 
+/*--------------------------------------------------------------------HEADER*/
 
-.index-header { /*Fondo Header*/
+/*Fondo Header*/
+.index-header { 
+    grid-area: header;
+    border: 2px solid red;
     height: 98vh;
     background-image: linear-gradient(45deg,
             var(--colorTeal-A),
@@ -83,32 +98,37 @@ button {
     margin-top: 1.5rem;
 }
 
-/*-----------------------------------------------------Sobre Mi*/
+/*----------------------------------------------------------------Sobre Mi*/
 
 .seccion-sobre-mi {
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-top: 3rem;
+    grid-area: section;
+    border: 2px solid blue;
+    margin: 0 80px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    "contenedor-seccion-sobre-mi imagen-sobre-mi";
+    gap: 1rem;
 
 }
 
+/*contenedor secciones "origen" y "habilidades"*/
+.contenedor-seccion-sobre-mi {
+    grid-area: contenedor-seccion-sobre-mi;
+    border: 2px solid red;
+    
+}
+
+/*-----------------------------------SUB-SECCION: ORIGEN*/
+
 .contenedor-seccion-origen {
     position: relative;
-    width: 55%;
 }
 
 h3 {
     font-size: 3.4rem;
     color: var(--colorIndigo-A);
     font-weight: 700;
-}
-
-.h3-karla-origen {
-    position: absolute;
-    width: 35rem;
 }
 
 .h5-fraunces-origen {
@@ -122,7 +142,6 @@ h3 {
     position: absolute;
     top: 3.5rem;
     left: 14rem;
-    width: 18rem;
 }
 
 p {
@@ -132,11 +151,13 @@ p {
 }
 
 .p-sobre-mi {
-    padding-top: 7rem;
+    margin-top: 3rem;
 }
 
+/*--------------------------------SUB-SECCION: HABILIDADES*/
+
 .contenedor-seccion-habilidades {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 h4 {
@@ -150,7 +171,20 @@ h4 {
 }
 
 .contenedor-seccion-habilidades-iconos {
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
     }
+/*------------------------------------SUB-SECCION: IMAGEN*/
+
+.imagen-sobre-mi {
+    grid-area: imagen-sobre-mi;
+    border: 2px solid rgb(21, 0, 255);
+    width: 100%;
+    height: 28.7rem;
+    object-fit: cover;
+}
+
+/*----------------------------------------------------------------Proyectos*/
+
