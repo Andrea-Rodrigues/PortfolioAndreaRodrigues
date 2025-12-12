@@ -19,10 +19,11 @@
     --colorNeutro-D: #F6F7FA;
 }
 
-/*-----------------------------------------HEADER*/
+
+/*---------------------------------------------------------HEADER*/
 
 
-.index-header {
+.index-header { /*Fondo Header*/
     height: 98vh;
     background-image: linear-gradient(45deg,
             var(--colorTeal-A),
@@ -84,13 +85,33 @@ button {
 
 /*-----------------------------------------------------Sobre Mi*/
 
+.seccion-sobre-mi {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 3rem;
+
+}
+
+.contenedor-seccion-origen {
+    position: relative;
+    width: 55%;
+}
+
 h3 {
     font-size: 3.4rem;
     color: var(--colorIndigo-A);
     font-weight: 700;
 }
 
-.h5-fraunces {
+.h3-karla-origen {
+    position: absolute;
+    width: 35rem;
+}
+
+.h5-fraunces-origen {
     font-family: "fraunces", "serif";
     font-variation-settings:
         "SOFT" 50;
@@ -98,12 +119,24 @@ h3 {
     font-size: 2.2rem;
     color: var(--colorIndigo-B);
     font-weight: 400;
+    position: absolute;
+    top: 3.5rem;
+    left: 14rem;
+    width: 18rem;
 }
 
 p {
     font-size: 1rem;
     font-weight: 500;
     color: var(--colorNeutro-B);
+}
+
+.p-sobre-mi {
+    padding-top: 7rem;
+}
+
+.contenedor-seccion-habilidades {
+    margin-top: 2rem;
 }
 
 h4 {
@@ -115,3 +148,9 @@ h4 {
     font-size: 2.8rem;
     color: var(--colorIndigo-B);
 }
+
+.contenedor-seccion-habilidades-iconos {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    }
