@@ -21,15 +21,15 @@
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr 3fr auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "section"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "footer";
     gap: 2rem;
-    
+
 }
 
 
@@ -47,11 +47,11 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     color: var(--colorNeutro-B);
-    
+
 }
 
 /*Fondo Header*/
-.index-header { 
+.index-header {
     grid-area: header;
     height: 98vh;
     background-image: linear-gradient(45deg,
@@ -61,7 +61,7 @@ body {
 }
 
 .seccion-index-header {
-    padding: 0 5rem;
+    margin: 0 5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -116,11 +116,11 @@ button {
 
 .seccion-sobre-mi {
     grid-area: section;
-    margin: 0 80px;
+    margin: 0 5rem;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-areas: 
-    "contenedor-seccion-sobre-mi imagen-sobre-mi";
+    grid-template-areas:
+        "contenedor-seccion-sobre-mi imagen-sobre-mi";
     gap: 1rem;
 
 }
@@ -128,7 +128,7 @@ button {
 /*contenedor secciones "origen" y "habilidades"*/
 .contenedor-seccion-sobre-mi {
     grid-area: contenedor-seccion-sobre-mi;
-    
+
 }
 
 /*-----------------------------------SUB-SECCION: ORIGEN*/
@@ -187,7 +187,8 @@ h4 {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: space-between;
-    }
+}
+
 /*------------------------------------SUB-SECCION: IMAGEN*/
 
 .imagen-sobre-mi {
@@ -207,16 +208,16 @@ main {
     margin: 0 5rem;
     display: grid;
     grid-template-columns: 10fr 2fr;
-    grid-template-rows: 8rem auto;
-    grid-template-areas: 
-    "titulo-proyectos boton-proyectos"
-    "imagenes-proyectos imagenes-proyectos";
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "titulo-proyectos boton-proyectos"
+        "imagenes-proyectos imagenes-proyectos";
 }
 
 .contenedor-seccion-proyectos {
     grid-area: titulo-proyectos;
     margin-top: 2rem;
-    display: block;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -233,7 +234,6 @@ main {
     font-size: 2.2rem;
     color: var(--colorIndigo-B);
     font-weight: 400;
-    margin-bottom: 0;
 }
 
 .h2-seccion-proyectos {
@@ -243,29 +243,123 @@ main {
     align-self: start;
     position: absolute;
     top: 2rem;
-    
-    
 }
 
 .contenedor-seccion-proyectos-boton {
     grid-area: boton-proyectos;
-    justify-self: end;
-    align-self: end;
-        border-color: var(--colorIndigo-A);
+    border-color: var(--colorIndigo-A);
     color: var(--colorIndigo-A);
-    
+    margin-top: 5rem;
+
 }
 
 .contenedor-seccion-proyectos-imagenes {
+    margin-top: 5rem;
+    grid-area: imagenes-proyectos;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 68.75rem;
-    grid-area: 
-    "imgenes-proyect-grupo-1"
-    "imgenes-proyect-grupo-2"
-    "imgenes-proyect-grupo-3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "imagenes-proyecto-grupo-1 imagenes-proyecto-grupo-2 imagenes-proyecto-grupo-3";
+    gap: 1rem;
+
 }
 
-.imgenes-proyect-grupo-1 {
-    grid-area: imgenes-proyect-grupo-1;
+.contenedor-seccion-proyectos-imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.imagenes-proyecto-grupo-1 {
+    grid-area: imagenes-proyecto-grupo-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas:
+        "a1"
+        "a2"
+        "a3";
+    gap: 1rem;
+}
+
+.a1 {
+    grid-area: a1;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.a2 {
+    grid-area: a2;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.a3 {
+    grid-area: a3;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagenes-proyecto-grupo-2 {
+    grid-area: imagenes-proyecto-grupo-2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas:
+        "a4"
+        "a5"
+        "a6";
+    gap: 1rem;
+}
+
+.a4 {
+    grid-area: a4;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.a5 {
+    grid-area: a5;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.a6 {
+    grid-area: a6;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagenes-proyecto-grupo-3 {
+    grid-area: imagenes-proyecto-grupo-3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+        "a7"
+        "a8";
+    gap: 1rem;
+}
+
+.a7 {
+    grid-area: a7;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.a8 {
+    grid-area: a8;
+    width: 100%;
+    object-fit: cover;
+    display: block;
 }
