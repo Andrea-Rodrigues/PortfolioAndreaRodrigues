@@ -58,7 +58,7 @@ body {
 /*Fondo Header*/
 .index-header {
     grid-area: header;
-    height: 95vh;
+    height: 98vh;
     background-image: linear-gradient(45deg,
             var(--colorTeal-A),
             var(--colorIndigo-A));
@@ -165,11 +165,6 @@ h3 {
     left: 14rem;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--colorNeutro-B);
-}
 
 .p-sobre-mi {
     margin-top: 3rem;
@@ -251,8 +246,7 @@ h4 {
     color: var(--colorIndigo-A);
     font-weight: 900;
     align-self: start;
-    position: absolute;
-    top: 2rem;
+    margin-top: -1rem;
 }
 
 .contenedor-seccion-proyectos-boton {
@@ -415,7 +409,7 @@ footer {
     font-weight: 700;
     color: var(--colorIndigo-B);
     text-align: center;
-    
+
 }
 
 .botones-footer {
@@ -439,4 +433,171 @@ footer {
     color: var(--colorIndigo-B);
     text-align: center;
     margin-top: 6rem;
+}
+
+
+/*MEDIA QUERIES TABLET*/
+
+@media (max-width: 1024px) {
+
+    .seccion-index-header,
+    .seccion-sobre-mi,
+    .seccion-proyectos {
+        margin: 0 3rem;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+        line-height: 4.4rem;
+    }
+
+    .h1-fraunces {
+        font-size: 3.6rem;
+    }
+
+    .seccion-sobre-mi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "contenedor-seccion-sobre-mi"
+            "imagen-sobre-mi";
+    }
+
+    .imagen-sobre-mi {
+        height: 35rem;
+    }
+
+    .contenedor-seccion-habilidades-iconos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .contenedor-seccion-proyectos-boton {
+        font-size: 1rem;
+        justify-self: start;
+        padding: -5rem 0;
+    }
+
+
+    .contenedor-seccion-proyectos-imagenes {
+        grid-template-columns: 0 2fr 2fr;
+    }
+
+    .imagenes-proyecto-grupo-3 {
+        grid-column: span 2;
+    }
+
+    footer {
+        height: auto;
+        padding: 4rem 0;
+    }
+}
+
+/*MEDIA QUERIES MOVIL*/
+
+@media (max-width: 768px) {
+
+    body {
+        gap: 1rem;
+    }
+
+    /* HEADER */
+    .seccion-index-header {
+        margin: 0 1.5rem;
+        align-items: flex-end;
+    }
+
+    h1 {
+        font-size: 4.7rem;
+        line-height: 3.2rem;
+        margin-top: 9rem;
+        text-align: right;
+        line-height: 4rem;
+    }
+
+    .h1-fraunces {
+        font-size: 4rem;
+    }
+
+    /* SOBRE MI */
+    .seccion-sobre-mi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "contenedor-seccion-sobre-mi"
+            "imagen-sobre-mi";
+        margin: 0 1.5rem;
+    }
+
+    .imagen-sobre-mi {
+        height: 20rem;
+    }
+
+    h3 {
+        line-height: 3.5rem;
+    }
+
+    .h5-fraunces-origen {
+        position: static;
+        margin-top: -0.5rem;
+    }
+
+    .p-sobre-mi {
+        margin-top: -0.2rem;
+    }
+
+    .contenedor-seccion-habilidades-iconos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* PROYECTOS */
+    .seccion-proyectos {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "titulo-proyectos"
+            "boton-proyectos"
+            "imagenes-proyectos";
+        margin: 0 1rem;
+    }
+
+    .h2-seccion-proyectos {
+        font-size: 3.8rem;
+    }
+
+    .contenedor-seccion-proyectos-boton {
+        margin-top: 0;
+        font-size: 1rem;
+        justify-self: start;
+        padding: -5rem 0;
+    }
+
+    .contenedor-seccion-proyectos-imagenes {
+        margin-left: -0.7rem;
+        grid-template-columns: 0 2fr 2fr;
+        margin-top: 2rem;
+    }
+
+    .imagenes-proyecto-grupo-1,
+    .imagenes-proyecto-grupo-2,
+    .imagenes-proyecto-grupo-3 {
+        grid-template-rows: auto;
+    }
+
+    /* FOOTER */
+    footer {
+        height: auto;
+        padding: 3rem 1.5rem;
+    }
+
+    .h2-fraunces-footer {
+        font-size: 2.5rem;
+    }
+
+    .botones-footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-footer {
+        margin-top: 2rem;
+    }
 }
