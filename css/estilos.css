@@ -21,7 +21,7 @@
 
 a {
     text-decoration: none;
-    color: var(--colorIndigo-B);
+    color: inherit;
 }
 
 body {
@@ -58,7 +58,7 @@ body {
 /*Fondo Header*/
 .index-header {
     grid-area: header;
-    height: 98vh;
+    height: 95vh;
     background-image: linear-gradient(45deg,
             var(--colorTeal-A),
             var(--colorIndigo-A));
@@ -115,6 +115,10 @@ button {
     border: 1.8px, solid var(--colorBlanco);
     border-radius: 12px;
     margin-top: 1.5rem;
+}
+
+.carousel-inner {
+    height: 90vh;
 }
 
 /*----------------------------------------------------------------Sobre Mi*/
@@ -205,7 +209,7 @@ h4 {
 
 /*----------------------------------------------------------------Proyectos*/
 
-main {
+.main-index {
     grid-area: main;
     background-color: var(--colorNeutro-D);
 }
@@ -369,6 +373,12 @@ main {
     object-fit: cover;
     display: block;
 }
+
+.form {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /*-------------------------------------------------------------------------------FOOTER*/
 
