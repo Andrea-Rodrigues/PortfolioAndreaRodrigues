@@ -19,6 +19,11 @@
     --colorNeutro-D: #F6F7FA;
 }
 
+a {
+    text-decoration: none;
+    color: var(--colorIndigo-B);
+}
+
 body {
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -201,6 +206,7 @@ h4 {
 /*----------------------------------------------------------------Proyectos*/
 
 main {
+    grid-area: main;
     background-color: var(--colorNeutro-D);
 }
 
@@ -362,4 +368,65 @@ main {
     width: 100%;
     object-fit: cover;
     display: block;
+}
+
+/*-------------------------------------------------------------------------------FOOTER*/
+
+footer {
+    grid-area: footer;
+    height: 55vh;
+    background-image: linear-gradient(75deg,
+            var(--colorNeutro-A),
+            var(--colorIndigo-A));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.seccion-footer {
+    margin-top: 2rem;
+}
+
+.h2-fraunces-footer {
+    font-family: "Fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--colorIndigo-B);
+    text-align: center;
+}
+
+.h5-footer {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--colorIndigo-B);
+    text-align: center;
+    
+}
+
+.botones-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    margin: 0 4rem;
+}
+
+.boton-linkedin {
+    border-color: var(--colorIndigo-B);
+}
+
+.boton-contacto-footer {
+    border-color: var(--colorIndigo-B);
+    color: var(--colorIndigo-B);
+}
+
+.p-footer {
+    color: var(--colorIndigo-B);
+    text-align: center;
+    margin-top: 6rem;
 }
