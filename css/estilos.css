@@ -35,10 +35,24 @@ body {
 
 /*--------------------------------------------------------------------HEADER*/
 
+.navbar-brand {
+    font-family: "karla", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--colorIndigo-A);
+    margin: 0 4rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--colorNeutro-B);
+    
+}
+
 /*Fondo Header*/
 .index-header { 
     grid-area: header;
-    border: 2px solid red;
     height: 98vh;
     background-image: linear-gradient(45deg,
             var(--colorTeal-A),
@@ -47,12 +61,12 @@ body {
 }
 
 .seccion-index-header {
-    padding: 0 80px;
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-end;
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
 
 
@@ -102,7 +116,6 @@ button {
 
 .seccion-sobre-mi {
     grid-area: section;
-    border: 2px solid blue;
     margin: 0 80px;
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -115,7 +128,6 @@ button {
 /*contenedor secciones "origen" y "habilidades"*/
 .contenedor-seccion-sobre-mi {
     grid-area: contenedor-seccion-sobre-mi;
-    border: 2px solid red;
     
 }
 
@@ -180,7 +192,6 @@ h4 {
 
 .imagen-sobre-mi {
     grid-area: imagen-sobre-mi;
-    border: 2px solid rgb(21, 0, 255);
     width: 100%;
     height: 28.7rem;
     object-fit: cover;
@@ -188,3 +199,73 @@ h4 {
 
 /*----------------------------------------------------------------Proyectos*/
 
+main {
+    background-color: var(--colorNeutro-D);
+}
+
+.seccion-proyectos {
+    margin: 0 5rem;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-template-rows: 8rem auto;
+    grid-template-areas: 
+    "titulo-proyectos boton-proyectos"
+    "imagenes-proyectos imagenes-proyectos";
+}
+
+.contenedor-seccion-proyectos {
+    grid-area: titulo-proyectos;
+    margin-top: 2rem;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+.h5-fraunces-proyectos {
+    font-family: "fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-style: oblique;
+    font-size: 2.2rem;
+    color: var(--colorIndigo-B);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.h2-seccion-proyectos {
+    font-size: 4.1rem;
+    color: var(--colorIndigo-A);
+    font-weight: 900;
+    align-self: start;
+    position: absolute;
+    top: 2rem;
+    
+    
+}
+
+.contenedor-seccion-proyectos-boton {
+    grid-area: boton-proyectos;
+    justify-self: end;
+    align-self: end;
+        border-color: var(--colorIndigo-A);
+    color: var(--colorIndigo-A);
+    
+}
+
+.contenedor-seccion-proyectos-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 68.75rem;
+    grid-area: 
+    "imgenes-proyect-grupo-1"
+    "imgenes-proyect-grupo-2"
+    "imgenes-proyect-grupo-3";
+}
+
+.imgenes-proyect-grupo-1 {
+    grid-area: imgenes-proyect-grupo-1;
+}

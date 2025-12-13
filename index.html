@@ -23,6 +23,25 @@
 <body>
 
     <header class="index-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Andrea Rodrigues</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ----------------------------------------------------------------------------------------------- HEADER -->
         <section class="seccion-index-header">
             <h6 class="h6-fraunces">¡Hola! Bienvenidos al portfolio de...</h6>
             <h1>ANDREA RODRIGUES<br><span class="h1-fraunces">DISEÑADORA GRÁFICA</span></h1>
@@ -31,49 +50,67 @@
     </header>
 
     <section class="seccion-sobre-mi">
+        <!-- ----------------------------------------------------------------------------------------------- SOBRE MI -->
         <section class="contenedor-seccion-sobre-mi">
-        <section class="contenedor-seccion-origen">
-            <h3>El origen del diseño</h3>
-            <h5 class="h5-fraunces-origen">(Bueno, del mio...)</h5>
-            <p class="p-sobre-mi">Lorem, ipsum dolor sit amet consectetur adipisicing elit Voluptatibus id amet
-                laudantium soluta quam.
-                Dignissimos quia id voluptas fuga placeat, voluptatem quos iure officiis laudantium dicta odit accusamus
-                vero neque nostrum incidunt, assumenda doloribus quo dolorem beatae ducimus ex. Dolor eos sapiente nulla
-                corrupti vitae mollitia deserunt, culpa aliquid soluta impedit consequatur? </p>
-        </section>
-        <section class="contenedor-seccion-habilidades">
-            <h4>Habilidades</h4>
-            <section class="contenedor-seccion-habilidades-iconos">
-                <img src="./img/icono-illustrator.svg" alt="icono-illustrator">
-                <img src="./img/icono-photoshop.svg" alt="icono-photoshop">
-                <img src="./img/icono-indesign.svg" alt="icono-indesign">
-                <img src="./img/icono-after-effects.svg" alt="icono-after-effects">
-                <img src="./img/icono-premiere.svg" alt="icono-premiere">
-                <img src="./img/icono-figma.svg" alt="icono-figma">
-                <img src="./img/icono-wordpress.svg" alt="icono-wordpress">
+            <section class="contenedor-seccion-origen"> <!-- ----------------- SUB-SECCION: ORIGEN -->
+                <h3>El origen del diseño</h3>
+                <h5 class="h5-fraunces-origen">(Bueno, del mio...)</h5>
+                <p class="p-sobre-mi">Lorem, ipsum dolor sit amet consectetur adipisicing elit Voluptatibus id amet
+                    laudantium soluta quam.
+                    Dignissimos quia id voluptas fuga placeat, voluptatem quos iure officiis laudantium dicta odit
+                    accusamus
+                    vero neque nostrum incidunt, assumenda doloribus quo dolorem beatae ducimus ex. Dolor eos sapiente
+                    nulla
+                    corrupti vitae mollitia deserunt, culpa aliquid soluta impedit consequatur? </p>
             </section>
-        </section>
-    </section>
-    <img class="imagen-sobre-mi" src="./img/imagen-super-guapa.png" alt="imagen-sobre-mi">
+            <section class="contenedor-seccion-habilidades"> <!-- ------------ SUB-SECCION: HABILIDADES -->
+                <h4>Habilidades</h4>
+                <section class="contenedor-seccion-habilidades-iconos">
+                    <img src="./img/icono-illustrator.svg" alt="icono-illustrator">
+                    <img src="./img/icono-photoshop.svg" alt="icono-photoshop">
+                    <img src="./img/icono-indesign.svg" alt="icono-indesign">
+                    <img src="./img/icono-after-effects.svg" alt="icono-after-effects">
+                    <img src="./img/icono-premiere.svg" alt="icono-premiere">
+                    <img src="./img/icono-figma.svg" alt="icono-figma">
+                    <img src="./img/icono-wordpress.svg" alt="icono-wordpress">
+                </section>
+            </section>
+        </section> <!-- ------------------------------------------------------- SUB-SECCION: IMAGEN -->
+        <img class="imagen-sobre-mi" src="./img/imagen-super-guapa.png" alt="imagen-sobre-mi">
     </section>
 
     <main>
-        <section>
-            <h5 class="h5-fraunces-proyectos">Mi caos, digo...</h5>
-            <h2>Mis Proyectos</h2>
+        <!-- ------------------------------------------------------------------------------------------------------------------------- PROYECTOS -->
+        <section class="seccion-proyectos">
+            <section class="contenedor-seccion-proyectos">
+                <!-- ---------------------------------------------------- SUB-SECCION: TITULO -->
+                <h5 class="h5-fraunces-proyectos">Mi caos, digo...</h5>
+                <h2 class="h2-seccion-proyectos">Mis Proyectos</h2>
+            </section>
+            <button class="contenedor-seccion-proyectos-boton">Ver más</button>
+            <!-- ------------------------------------- SUB-SECCION: BOTON -->
+            <section class="contenedor-seccion-proyectos-imagenes">
+                <!-- ---------------------------------------------------- SUB-SECCION: IMAGENES-PROYECTOS -->
+                <section class="imgenes-proyect-grupo-1">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </section>
+                <section class="imgenes-proyect-grupo-2">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </section>
+                <section class="imgenes-proyect-grupo-3">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </section>
+            </section>
         </section>
-        <button>Ver más</button>
-        <img src="#" alt="">
-        <img src="#" alt="">
-        <img src="#" alt="">
-        <img src="#" alt="">
-        <img src="#" alt="">
-        <img src="#" alt="">
-        <img src="#" alt="">
-        <img src="#" alt="">
     </main>
 
     <footer>
+        <!-- ------------------------------------------------------------------------------------------------------------------------- FOOTER -->
         <section>
             <h2 class="h2-fraunces">Andrea Rodrigues</h2>
             <h5>Portfolio</h5>
