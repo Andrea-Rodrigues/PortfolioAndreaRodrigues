@@ -1,3 +1,33 @@
+.fraunces, .h2-fraunces-footer, .h5-fraunces-proyectos, h4, .h5-fraunces-origen, .h1-fraunces, h6 {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+}
+
+.imagenes-proyectos, .a8, .a7, .a6, .a5, .a4, .a3, .a2, .a1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.fraunces, .h2-fraunces-footer, .h5-fraunces-proyectos, h4, .h5-fraunces-origen, .h1-fraunces, h6 {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+}
+
+.imagenes-proyectos, .a8, .a7, .a6, .a5, .a4, .a3, .a2, .a1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  border-radius: 8px;
+}
+
 /*--------------------------------------------------------------------HEADER*/
 .navbar-brand {
   font-family: "karla", sans-serif;
@@ -24,16 +54,14 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: none;
   align-items: flex-end;
   padding-top: 3rem;
 }
 
 h6 {
-  font-family: "fraunces", "serif";
-  font-variation-settings: "SOFT" 50;
   font-weight: 300;
   font-size: 1.6rem;
-  font-style: oblique;
   color: #ffffff;
   display: flex;
   align-self: self-start;
@@ -49,9 +77,6 @@ h1 {
 }
 
 .h1-fraunces {
-  font-family: "Fraunces", "serif";
-  font-variation-settings: "SOFT" 50;
-  font-style: oblique;
   font-weight: 600;
   font-size: 4.7rem;
 }
@@ -59,16 +84,31 @@ h1 {
 button {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #ffffff;
   background-color: transparent;
   padding: 0.5rem 1.5rem;
-  border: 1.8px, solid #ffffff;
   border-radius: 12px;
   margin-top: 1.5rem;
+  color: #ffffff;
+  border: 1.8px, solid #ffffff;
 }
 
 .carousel-inner {
   height: 90vh;
+}
+
+.fraunces, .h2-fraunces-footer, .h5-fraunces-proyectos, h4, .h5-fraunces-origen, h6, .h1-fraunces {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+}
+
+.imagenes-proyectos, .a8, .a7, .a6, .a5, .a4, .a3, .a2, .a1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  border-radius: 8px;
 }
 
 /*----------------------------------------------------------------Sobre Mi*/
@@ -77,8 +117,9 @@ button {
   margin: 0 5rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-areas: "contenedor-seccion-sobre-mi imagen-sobre-mi";
+  grid-template-rows: none;
   gap: 1rem;
+  grid-template-areas: "contenedor-seccion-sobre-mi imagen-sobre-mi";
 }
 
 /*contenedor secciones "origen" y "habilidades"*/
@@ -98,9 +139,6 @@ h3 {
 }
 
 .h5-fraunces-origen {
-  font-family: "fraunces", "serif";
-  font-variation-settings: "SOFT" 50;
-  font-style: oblique;
   font-size: 2.2rem;
   color: #59588F;
   font-weight: 400;
@@ -119,9 +157,6 @@ h3 {
 }
 
 h4 {
-  font-family: "fraunces", "serif";
-  font-variation-settings: "SOFT" 50;
-  font-style: oblique;
   font-weight: 400;
   font-size: 2.8rem;
   color: #59588F;
@@ -131,6 +166,8 @@ h4 {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: none;
+  gap: none;
   justify-content: space-between;
 }
 
@@ -140,6 +177,21 @@ h4 {
   width: 100%;
   height: 28.7rem;
   object-fit: cover;
+}
+
+.fraunces, .h2-fraunces-footer, .h5-fraunces-proyectos, h6, .h1-fraunces, .h5-fraunces-origen, h4 {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+}
+
+.imagenes-proyectos, .a8, .a7, .a6, .a5, .a4, .a3, .a2, .a1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  border-radius: 8px;
 }
 
 /*----------------------------------------------------------------Proyectos*/
@@ -153,6 +205,7 @@ h4 {
   display: grid;
   grid-template-columns: 10fr 2fr;
   grid-template-rows: auto 1fr;
+  gap: none;
   grid-template-areas: "titulo-proyectos boton-proyectos" "imagenes-proyectos imagenes-proyectos";
 }
 
@@ -168,9 +221,6 @@ h4 {
 }
 
 .h5-fraunces-proyectos {
-  font-family: "fraunces", "serif";
-  font-variation-settings: "SOFT" 50;
-  font-style: oblique;
   font-size: 2.2rem;
   color: #59588F;
   font-weight: 400;
@@ -189,24 +239,23 @@ h4 {
   border-color: #25245a;
   color: #25245a;
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -1rem;
 }
 
 .contenedor-seccion-proyectos-imagenes {
-  margin-top: 5rem;
+  margin-top: 2rem;
   grid-area: imagenes-proyectos;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "imagenes-proyecto-grupo-1 imagenes-proyecto-grupo-2 imagenes-proyecto-grupo-3";
+  grid-template-columns: reapeat 3, 1fr;
+  grid-template-rows: 1fr;
   gap: 1rem;
-}
-
-.contenedor-seccion-proyectos-imagenes img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
+  grid-template-areas: "imagenes-proyecto-grupo-1 imagenes-proyecto-grupo-2 imagenes-proyecto-grupo-3";
 }
 
 .imagenes-proyecto-grupo-1 {
@@ -214,82 +263,59 @@ h4 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 20% 40% 40%;
-  grid-template-areas: "a1" "a2" "a3";
   gap: 1rem;
+  grid-template-areas: "a1" "a2" "a3";
 }
 
 .a1 {
   grid-area: a1;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .a2 {
   grid-area: a2;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .a3 {
   grid-area: a3;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .imagenes-proyecto-grupo-2 {
   grid-area: imagenes-proyecto-grupo-2;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 25% 25%;
-  grid-template-areas: "a4" "a5" "a6";
+  grid-template-rows: 40% 30% 30%;
   gap: 1rem;
+  grid-template-areas: "a4" "a5" "a6";
 }
 
 .a4 {
   grid-area: a4;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .a5 {
   grid-area: a5;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .a6 {
   grid-area: a6;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .imagenes-proyecto-grupo-3 {
   grid-area: imagenes-proyecto-grupo-3;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 25% 75%;
-  grid-template-areas: "a7" "a8";
+  grid-template-rows: 45% 56.3%;
   gap: 1rem;
+  grid-template-areas: "a7" "a8";
 }
 
 .a7 {
   grid-area: a7;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .a8 {
   grid-area: a8;
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .form {
@@ -297,8 +323,24 @@ h4 {
   color: inherit;
 }
 
+.fraunces, .h2-fraunces-footer, h6, .h1-fraunces, .h5-fraunces-origen, h4, .h5-fraunces-proyectos {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+}
+
+.imagenes-proyectos, .a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  border-radius: 8px;
+}
+
 /*-------------------------------------------------------------------------------FOOTER*/
 footer {
+  margin-top: 5rem;
   grid-area: footer;
   height: 55vh;
   background-image: linear-gradient(75deg, #1E1E37, #25245a);
@@ -314,9 +356,6 @@ footer {
 }
 
 .h2-fraunces-footer {
-  font-family: "Fraunces", "serif";
-  font-variation-settings: "SOFT" 50;
-  font-style: oblique;
   font-weight: 600;
   font-size: 4rem;
   color: #59588F;
@@ -366,10 +405,10 @@ a {
 
 body {
   display: grid;
-  grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr;
-  grid-template-areas: "header" "section" "main" "footer";
+  grid-template-rows: auto auto auto auto;
   gap: 2rem;
+  grid-template-areas: "header" "section" "main" "footer";
 }
 
 /*# sourceMappingURL=style.css.map */

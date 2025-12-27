@@ -1,5 +1,5 @@
 @import "../utilities/extends";
-@import "../utilities/mixings";
+@import "../utilities/mixins";
 @import "../utilities/variables";
 
 /*----------------------------------------------------------------Proyectos*/
@@ -11,9 +11,7 @@
 
 .seccion-proyectos {
     margin: 0 5rem;
-    display: grid;
-    grid-template-columns: 10fr 2fr;
-    grid-template-rows: auto 1fr;
+    @include display-grid (grid, 10fr 2fr, auto 1fr, none);
     grid-template-areas:
         "titulo-proyectos boton-proyectos"
         "imagenes-proyectos imagenes-proyectos";
@@ -22,20 +20,14 @@
 .contenedor-seccion-proyectos {
     grid-area: titulo-proyectos;
     margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include display-flex (flex, column, wrap, flex-start, flex-start);
     position: relative;
 
 }
 
+
 .h5-fraunces-proyectos {
-    font-family: "fraunces", "serif";
-    font-variation-settings:
-        "SOFT" 50;
-    font-style: oblique;
+    @extend .fraunces;
     font-size: 2.2rem;
     color: $colorIndigo-B;
     font-weight: 400;
@@ -54,118 +46,86 @@
     border-color: $colorIndigo-A;
     color: $colorIndigo-A;
     margin-top: 5rem;
+    @include display-flex (flex, column, wrap, center, center);
+    position: relative;
+    top: -1rem;
 
 }
 
 .contenedor-seccion-proyectos-imagenes {
-    margin-top: 5rem;
+    margin-top: 2rem;
     grid-area: imagenes-proyectos;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    @include display-grid (grid, reapeat (3, 1fr), 1fr, 1rem);
     grid-template-areas:
         "imagenes-proyecto-grupo-1 imagenes-proyecto-grupo-2 imagenes-proyecto-grupo-3";
-    gap: 1rem;
 
-}
-
-.contenedor-seccion-proyectos-imagenes img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
 }
 
 .imagenes-proyecto-grupo-1 {
     grid-area: imagenes-proyecto-grupo-1;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 40% 40%;
+    @include display-grid (grid, 1fr, 20% 40% 40%, 1rem);
     grid-template-areas:
         "a1"
         "a2"
         "a3";
-    gap: 1rem;
 }
 
 .a1 {
     grid-area: a1;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .a2 {
     grid-area: a2;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .a3 {
     grid-area: a3;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .imagenes-proyecto-grupo-2 {
     grid-area: imagenes-proyecto-grupo-2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 25% 25%;
+    @include display-grid (grid, 1fr, 40% 30% 30%, 1rem);
     grid-template-areas:
         "a4"
         "a5"
         "a6";
-    gap: 1rem;
 }
 
 .a4 {
     grid-area: a4;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .a5 {
     grid-area: a5;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .a6 {
     grid-area: a6;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .imagenes-proyecto-grupo-3 {
     grid-area: imagenes-proyecto-grupo-3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 25% 75%;
+    height: 100%;
+    @include display-grid (grid, 1fr, 45% 56.3%, 1rem);
     grid-template-areas:
         "a7"
         "a8";
-    gap: 1rem;
 }
 
 .a7 {
     grid-area: a7;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .a8 {
     grid-area: a8;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    @extend .imagenes-proyectos;
 }
 
 .form {

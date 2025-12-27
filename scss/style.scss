@@ -1,5 +1,5 @@
 @import "./utilities/extends";
-@import "./utilities/mixings";
+@import "./utilities/mixins";
 @import "./utilities/variables";
 @import "./layout/header";
 @import "./layout/sobremi";
@@ -20,14 +20,11 @@ a {
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr;
+    @include display-grid (grid, 1fr, auto auto auto auto, 2rem);
     grid-template-areas:
         "header"
         "section"
         "main"
         "footer";
-    gap: 2rem;
 
 }

@@ -1,5 +1,5 @@
 @import "../utilities/extends";
-@import "../utilities/mixings";
+@import "../utilities/mixins";
 @import "../utilities/variables";
 
 
@@ -31,21 +31,15 @@
 
 .seccion-index-header {
     margin: 0 5rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    @include display-flex (flex, column, wrap, none, flex-end);
     padding-top: 3rem;
 }
 
 
 h6 {
-    font-family: "fraunces", "serif";
-    font-variation-settings:
-        "SOFT" 50;
+    @extend .fraunces;
     font-weight: 300;
     font-size: 1.6rem;
-    font-style: oblique;
     color: $colorBlanco;
     display: flex;
     align-self: self-start;
@@ -62,10 +56,7 @@ h1 {
 }
 
 .h1-fraunces {
-    font-family: "Fraunces", "serif";
-    font-variation-settings:
-        "SOFT" 50;
-    font-style: oblique;
+    @extend .fraunces;
     font-weight: 600;
     font-size: 4.7rem;
 }
@@ -73,12 +64,12 @@ h1 {
 button {
     font-size: 1.4rem;
     font-weight: 700;
-    color: $colorBlanco;
     background-color: transparent;
     padding: 0.5rem 1.5rem;
-    border: 1.8px, solid $colorBlanco;
     border-radius: 12px;
     margin-top: 1.5rem;
+    color: $colorBlanco;
+    border: 1.8px, solid $colorBlanco;
 }
 
 .carousel-inner {
