@@ -61,15 +61,9 @@ h1 {
     font-size: 4.7rem;
 }
 
-button {
-    font-size: 1.4rem;
-    font-weight: 700;
-    background-color: transparent;
-    padding: 0.5rem 1.5rem;
-    border-radius: 12px;
-    margin-top: 1.5rem;
-    color: $colorBlanco;
-    border: 1.8px, solid $colorBlanco;
+.btn-header:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.25rem 1rem transparentize($colorTeal-C, 0.3);
 }
 
 .carousel-inner {

@@ -1,0 +1,54 @@
+/*MEDIA QUERIES TABLET*/
+
+@media (max-width: 1100px) {
+
+    .seccion-index-header,
+    .seccion-sobre-mi,
+    .seccion-proyectos {
+        margin: 0 3rem;
+    }
+
+    h1 {
+        font-size: 4.4rem;
+        line-height: 4.4rem;
+    }
+
+    .h1-fraunces {
+        font-size: 3.6rem;
+    }
+
+    .seccion-sobre-mi {
+        @include display-grid (grid, 1fr, none, none);
+        grid-template-areas:
+            "contenedor-seccion-sobre-mi"
+            "imagen-sobre-mi";
+    }
+
+    .imagen-sobre-mi {
+        height: 35rem;
+    }
+
+    .contenedor-seccion-habilidades-iconos {
+        @include display-grid (grid, repeat(5, 1fr), none, none);
+    }
+
+    .contenedor-seccion-proyectos-boton {
+        font-size: 1rem;
+        justify-self: start;
+        padding: -5rem 0;
+    }
+
+
+    .contenedor-seccion-proyectos-imagenes {
+        @include display-grid (grid, 0 2fr 2fr, none, none);
+    }
+
+    .imagenes-proyecto-grupo-3 {
+        @include display-grid (grid, span 2, none, none);
+    }
+
+    footer {
+        height: auto;
+        padding: 4rem 0;
+    }
+}

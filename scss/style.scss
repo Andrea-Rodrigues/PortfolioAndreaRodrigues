@@ -5,6 +5,8 @@
 @import "./layout/sobremi";
 @import "./layout/proyectos";
 @import "./layout/footer";
+@import "./layout/v-tablet";
+@import "./layout/v-movil";
 
 
 
@@ -20,7 +22,7 @@ a {
 }
 
 body {
-    @include display-grid (grid, 1fr, auto auto auto auto, 2rem);
+    @include display-grid (grid, 1fr, auto auto auto auto, 0);
     grid-template-areas:
         "header"
         "section"
@@ -28,3 +30,15 @@ body {
         "footer";
 
 }
+
+button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    color: $colorBlanco;
+    border: 1.8px, solid $colorBlanco;
+}
+

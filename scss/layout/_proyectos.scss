@@ -5,8 +5,11 @@
 /*----------------------------------------------------------------Proyectos*/
 
 .main-index {
+    height: 100%;
     grid-area: main;
     background-color: $colorNeutro-D;
+    object-fit: cover;
+    margin-bottom: 5rem;
 }
 
 .seccion-proyectos {
@@ -50,6 +53,11 @@
     position: relative;
     top: -1rem;
 
+}
+
+.contenedor-seccion-proyectos-boton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.25rem 1rem transparentize($colorIndigo-B, 0.3);
 }
 
 .contenedor-seccion-proyectos-imagenes {
@@ -131,4 +139,8 @@
 .form {
     text-decoration: none;
     color: inherit;
+}
+
+.carousel-inner {
+    height: auto;
 }

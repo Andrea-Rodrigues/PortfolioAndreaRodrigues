@@ -1,0 +1,112 @@
+/*MEDIA QUERIES MOVIL*/
+
+@media (max-width: 768px) {
+
+    body {
+        gap: 1rem;
+    }
+
+    /* HEADER */
+    .seccion-index-header {
+        margin: 0 1.5rem;
+        align-items: flex-end;
+    }
+
+    h1 {
+        font-size: 4.7rem;
+        line-height: 3.2rem;
+        margin-top: 9rem;
+        text-align: right;
+        line-height: 4rem;
+    }
+
+    .h1-fraunces {
+        font-size: 4rem;
+    }
+
+    /* SOBRE MI */
+    .seccion-sobre-mi {
+        @include display-grid (grid, 1fr, none, none);
+        grid-template-areas:
+            "contenedor-seccion-sobre-mi"
+            "imagen-sobre-mi";
+        margin: 0 1.5rem;
+    }
+
+    .imagen-sobre-mi {
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    h3 {
+        line-height: 3.5rem;
+    }
+
+    .h5-fraunces-origen {
+        position: static;
+        margin-top: -0.5rem;
+    }
+
+    .p-sobre-mi {
+        margin-top: -0.2rem;
+    }
+
+    .contenedor-seccion-habilidades-iconos {
+        @include display-grid (grid, repeat(4, 1fr), none, none);
+    }
+
+    /* PROYECTOS */
+    .seccion-proyectos {
+        @include display-grid (grid, 1fr, none, none);
+        grid-template-areas:
+            "titulo-proyectos"
+            "boton-proyectos"
+            "imagenes-proyectos";
+        margin: 0 1rem;
+    }
+
+    .h2-seccion-proyectos {
+        font-size: 3.8rem;
+    }
+
+    .contenedor-seccion-proyectos-boton {
+        margin-top: 1rem;
+        font-size: 1rem;
+        justify-self: start;
+        padding: -5rem 0;
+    }
+
+    .contenedor-seccion-proyectos-imagenes {
+        margin-left: -0.7rem;
+        @include display-grid (grid, 0 2fr 2fr, none, none);
+        margin-top: 1rem;
+    }
+
+    .imagenes-proyecto-grupo-1,
+    .imagenes-proyecto-grupo-2,
+    .imagenes-proyecto-grupo-3 {
+        @include display-grid (grid, none, auto, none);
+    }
+
+    /* FOOTER */
+    footer {
+        height: auto;
+        padding: 3rem 1.5rem;
+    }
+
+    .h2-fraunces-footer {
+        font-size: 2.5rem;
+    }
+
+    .botones-footer {
+        @include display-grid (grid, 1fr 1fr 1fr, none, none);
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-footer {
+        margin-top: 2rem;
+    }
+}

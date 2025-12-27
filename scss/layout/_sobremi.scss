@@ -6,7 +6,7 @@
 
 .seccion-sobre-mi {
     grid-area: section;
-    margin: 0 5rem;
+    margin: 5rem 5rem;
     @include display-grid (grid, 3fr 2fr, none, 1rem);
     grid-template-areas:
         "contenedor-seccion-sobre-mi imagen-sobre-mi";

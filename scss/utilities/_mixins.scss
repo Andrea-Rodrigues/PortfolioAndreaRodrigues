@@ -1,5 +1,5 @@
 @mixin display-flex ($display-f, $f-direction, $f-wrap, $justify-content, $align-items) {
-        display: $display-f;
+    display: $display-f;
     flex-direction: $f-direction;
     flex-wrap: $f-wrap;
     justify-content: $justify-content;
@@ -7,7 +7,7 @@
 }
 
 @mixin display-grid ($d-grid, $grid-columns, $grid-rows, $gap) {
-        display: $d-grid;
+    display: $d-grid;
     grid-template-columns: $grid-columns;
     grid-template-rows: $grid-rows;
     gap: $gap;
