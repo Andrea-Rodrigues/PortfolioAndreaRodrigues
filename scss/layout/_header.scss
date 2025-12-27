@@ -1,0 +1,86 @@
+@import "../utilities/extends";
+@import "../utilities/mixings";
+@import "../utilities/variables";
+
+
+/*--------------------------------------------------------------------HEADER*/
+
+.navbar-brand {
+    font-family: "karla", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $colorIndigo-A;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: $colorNeutro-B;
+
+}
+
+/*Fondo Header*/
+.index-header {
+    grid-area: header;
+    height: 98vh;
+    background-image: linear-gradient(45deg,
+            $colorTeal-A,
+            $colorIndigo-A);
+
+}
+
+.seccion-index-header {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 3rem;
+}
+
+
+h6 {
+    font-family: "fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-style: oblique;
+    color: $colorBlanco;
+    display: flex;
+    align-self: self-start;
+}
+
+h1 {
+    font-size: 5.6rem;
+    color: $colorBlanco;
+    font-weight: 900;
+    line-height: 5rem;
+    text-align: right;
+    margin-top: 17rem;
+
+}
+
+.h1-fraunces {
+    font-family: "Fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 4.7rem;
+}
+
+button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $colorBlanco;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border: 1.8px, solid $colorBlanco;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
+
+.carousel-inner {
+    height: 90vh;
+}

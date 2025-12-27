@@ -1,0 +1,64 @@
+@import "../utilities/extends";
+@import "../utilities/mixings";
+@import "../utilities/variables";
+
+/*-------------------------------------------------------------------------------FOOTER*/
+
+footer {
+    grid-area: footer;
+    height: 55vh;
+    background-image: linear-gradient(75deg,
+            $colorNeutro-A,
+            $colorIndigo-A);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.seccion-footer {
+    margin-top: 2rem;
+}
+
+.h2-fraunces-footer {
+    font-family: "Fraunces", "serif";
+    font-variation-settings:
+        "SOFT" 50;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 4rem;
+    color: $colorIndigo-B;
+    text-align: center;
+}
+
+.h5-footer {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $colorIndigo-B;
+    text-align: center;
+
+}
+
+.botones-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    margin: 0 4rem;
+}
+
+.boton-linkedin {
+    border-color: $colorIndigo-B;
+}
+
+.boton-contacto-footer {
+    border-color: $colorIndigo-B;
+    color: $colorIndigo-B;
+}
+
+.p-footer {
+    color: $colorIndigo-B;
+    text-align: center;
+    margin-top: 6rem;
+}

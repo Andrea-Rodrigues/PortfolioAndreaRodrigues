@@ -1,0 +1,375 @@
+/*--------------------------------------------------------------------HEADER*/
+.navbar-brand {
+  font-family: "karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #25245a;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #36364D;
+}
+
+/*Fondo Header*/
+.index-header {
+  grid-area: header;
+  height: 98vh;
+  background-image: linear-gradient(45deg, #30B0C7, #25245a);
+}
+
+.seccion-index-header {
+  margin: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-top: 3rem;
+}
+
+h6 {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-weight: 300;
+  font-size: 1.6rem;
+  font-style: oblique;
+  color: #ffffff;
+  display: flex;
+  align-self: self-start;
+}
+
+h1 {
+  font-size: 5.6rem;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 5rem;
+  text-align: right;
+  margin-top: 17rem;
+}
+
+.h1-fraunces {
+  font-family: "Fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 4.7rem;
+}
+
+button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border: 1.8px, solid #ffffff;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+.carousel-inner {
+  height: 90vh;
+}
+
+/*----------------------------------------------------------------Sobre Mi*/
+.seccion-sobre-mi {
+  grid-area: section;
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas: "contenedor-seccion-sobre-mi imagen-sobre-mi";
+  gap: 1rem;
+}
+
+/*contenedor secciones "origen" y "habilidades"*/
+.contenedor-seccion-sobre-mi {
+  grid-area: contenedor-seccion-sobre-mi;
+}
+
+/*-----------------------------------SUB-SECCION: ORIGEN*/
+.contenedor-seccion-origen {
+  position: relative;
+}
+
+h3 {
+  font-size: 3.4rem;
+  color: #25245a;
+  font-weight: 700;
+}
+
+.h5-fraunces-origen {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+  font-size: 2.2rem;
+  color: #59588F;
+  font-weight: 400;
+  position: absolute;
+  top: 3.5rem;
+  left: 14rem;
+}
+
+.p-sobre-mi {
+  margin-top: 3rem;
+}
+
+/*--------------------------------SUB-SECCION: HABILIDADES*/
+.contenedor-seccion-habilidades {
+  margin-top: 4rem;
+}
+
+h4 {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: #59588F;
+}
+
+.contenedor-seccion-habilidades-iconos {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-between;
+}
+
+/*------------------------------------SUB-SECCION: IMAGEN*/
+.imagen-sobre-mi {
+  grid-area: imagen-sobre-mi;
+  width: 100%;
+  height: 28.7rem;
+  object-fit: cover;
+}
+
+/*----------------------------------------------------------------Proyectos*/
+.main-index {
+  grid-area: main;
+  background-color: #F6F7FA;
+}
+
+.seccion-proyectos {
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "titulo-proyectos boton-proyectos" "imagenes-proyectos imagenes-proyectos";
+}
+
+.contenedor-seccion-proyectos {
+  grid-area: titulo-proyectos;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.h5-fraunces-proyectos {
+  font-family: "fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+  font-size: 2.2rem;
+  color: #59588F;
+  font-weight: 400;
+}
+
+.h2-seccion-proyectos {
+  font-size: 4.1rem;
+  color: #25245a;
+  font-weight: 900;
+  align-self: start;
+  margin-top: -1rem;
+}
+
+.contenedor-seccion-proyectos-boton {
+  grid-area: boton-proyectos;
+  border-color: #25245a;
+  color: #25245a;
+  margin-top: 5rem;
+}
+
+.contenedor-seccion-proyectos-imagenes {
+  margin-top: 5rem;
+  grid-area: imagenes-proyectos;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagenes-proyecto-grupo-1 imagenes-proyecto-grupo-2 imagenes-proyecto-grupo-3";
+  gap: 1rem;
+}
+
+.contenedor-seccion-proyectos-imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.imagenes-proyecto-grupo-1 {
+  grid-area: imagenes-proyecto-grupo-1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas: "a1" "a2" "a3";
+  gap: 1rem;
+}
+
+.a1 {
+  grid-area: a1;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.a2 {
+  grid-area: a2;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.a3 {
+  grid-area: a3;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imagenes-proyecto-grupo-2 {
+  grid-area: imagenes-proyecto-grupo-2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-areas: "a4" "a5" "a6";
+  gap: 1rem;
+}
+
+.a4 {
+  grid-area: a4;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.a5 {
+  grid-area: a5;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.a6 {
+  grid-area: a6;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imagenes-proyecto-grupo-3 {
+  grid-area: imagenes-proyecto-grupo-3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  grid-template-areas: "a7" "a8";
+  gap: 1rem;
+}
+
+.a7 {
+  grid-area: a7;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.a8 {
+  grid-area: a8;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.form {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*-------------------------------------------------------------------------------FOOTER*/
+footer {
+  grid-area: footer;
+  height: 55vh;
+  background-image: linear-gradient(75deg, #1E1E37, #25245a);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.seccion-footer {
+  margin-top: 2rem;
+}
+
+.h2-fraunces-footer {
+  font-family: "Fraunces", "serif";
+  font-variation-settings: "SOFT" 50;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 4rem;
+  color: #59588F;
+  text-align: center;
+}
+
+.h5-footer {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #59588F;
+  text-align: center;
+}
+
+.botones-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  margin: 0 4rem;
+}
+
+.boton-linkedin {
+  border-color: #59588F;
+}
+
+.boton-contacto-footer {
+  border-color: #59588F;
+  color: #59588F;
+}
+
+.p-footer {
+  color: #59588F;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+* {
+  font-family: "karla", "sans-serif";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "section" "main" "footer";
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
